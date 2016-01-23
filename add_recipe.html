@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>You cook good</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/structure.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="header_wrapper clearfix">
+			<img class="logo clearfix" src="images/logo.png">
+			<nav class="main_menu clearfix">
+				<ul class="menu">
+					<li>
+						<a href="index.html">Начало</a>
+					</li>
+					<li>
+						<a href="recipes.html">Рецепти</a>
+					</li>
+					<li>
+						<a href="add_recipe.html">Добави рецепта</a>
+					</li>
+					<li>
+						<a href="contacts.html">Контакти</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="add_recipe">
+		<div class="add_recipe_text">
+			<h1>Добави рецепта</h1>
+			<form>	
+					<div class="name_products">
+						<label>Име</label>
+						<br>
+						<input type="text" name="name">
+						<br>
+						<label>Необходими продукти</label>
+						<br>
+						<textarea name="text_area" cols="30" rows="12"></textarea>
+					</div>
+					<div class="process">
+						<label>Начин на приготвяне</label>
+						<br>
+						<textarea name="text_area" cols="30" rows="15"></textarea>
+						
+					</div>
+					<!-- <div class="type">
+
+						<div class="types1">
+							<input type="radio" name="type" id="type1" value="starter">
+							<label for="type1">Предястия</label>
+							<br>
+
+							<input type="radio" name="type" id="type2" value="main">
+							<label for="type2">Основно</label>
+							<br>
+
+							<input type="radio" name="type" id="type3" value="soup">
+							<label for="type3">Супи</label>
+							<br>
+
+							<input type="radio" name="type" id="type4" value="salad">
+							<label for="type4">Салата</label>
+								<br>
+
+							<input type="radio" name="type" id="type5" value="dessert">
+							<label for="type5">Десерти</label>
+							<br>
+
+							<input type="radio" name="type" id="type6" value="bread">
+							<label for="type6">Хлебни</label>
+							<br>
+
+
+							
+						</div>
+						<div class="types2">
+							<input type="radio" name="type" id="type7" value="garnish">
+							<label for="type7">Гарнитури</label>
+							<br>
+
+							<input type="radio" name="type" id="type8" value="sauces">
+							<label for="type8">Сосове</label>
+							<br>
+
+							<input type="radio" name="type" id="type9" value="drink">
+							<label for="type9">Напитки</label>
+							<br>
+
+							<input type="radio" name="type" id="type10" value="coctails">
+							<label for="type10">Коктейли</label>
+							<br>
+
+							<input type="radio" name="type" id="type11" value="sadwich">
+							<label for="type11">Сандвичи</label>
+							<br>
+
+							<input type="radio" name="type" id="type12" value="other" checked>
+							<label for="type12">Други</label>
+							<br>
+					</div>
+					</div>
+ -->
+					<div class="photo">
+						<label>Прикачване на снимка</label>
+						<br>
+						<input type="file" name="datafile" size="25">
+					</div>
+					<div class="submit_reset">
+						<button type="submit" id="button">Добави</button>
+						<button type="reset" id="button">Изчисти</button>
+					</div>
+
+
+			</form>
+		</div>
+
+	</section>
+</body>
+</html>
