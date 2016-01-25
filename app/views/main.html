@@ -1,0 +1,30 @@
+<div class="slide clearfix">
+  <h1>РЕЦЕПТА НА ДЕНЯ</h1>
+  <h2>
+    {{ main.recipe.title }}
+  </h2>
+  <div class="row">
+    <div class="col-md-6">
+      <p>
+        Необходими продукти
+      </p>  
+      <ul>
+        <li ng-repeat="product in main.recipe.products">{{ product }}</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <img ng-src="{{ main.recipe.imgSrc }}">    
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="day_text">
+      <p class="process-title">
+        Начин на приготвяне 
+      </p>
+      <p>
+        {{ main.recipe.description }}
+      </p>
+    </div>
+  </div>
+</div>

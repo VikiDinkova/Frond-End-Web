@@ -1,0 +1,34 @@
+<div class="add_recipe_text">
+  <h1>Добави рецепта</h1>
+
+  <div class="alert alert-danger" role="alert" ng-if="addRecipes.message">
+    {{ addRecipes.message }}
+  </div>
+
+  <div class="row">
+    <form ng-submit="addRecipes.submit()">
+      <div class="col-md-4">
+        <label>Име</label>
+        <input type="text" name="name" ng-model="addRecipes.newRecipe.title">
+        <label>Необходими продукти</label>
+        <textarea name="text_area" cols="30" rows="12" ng-model="addRecipes.newRecipe.products">
+        </textarea>
+      </div>
+
+      <div class="col-md-4">
+        <label>Начин на приготвяне</label>
+        <textarea name="text_area" cols="30" rows="15" ng-model="addRecipes.newRecipe.description"></textarea>
+      </div>
+        
+      <div class="col-md-4">
+        <label>Прикачване на снимка</label>
+        <input type="file" name="datafile" size="25" ng-model="addRecipes.newRecipe.imgSrc">
+      </div>
+
+      <div class="col-md-4">
+        <button type="submit" id="button">Добави</button>
+        <button type="reset" id="button">Изчисти</button>
+      </div>
+    </form>
+  </div>
+</div>

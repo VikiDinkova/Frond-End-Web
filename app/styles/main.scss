@@ -67,14 +67,8 @@ body {
 	}
 
 	.day_menu img {
-		position: absolute;
-		max-width: 30em;
-		max-height: 20em;
-    	border: 0.3em solid #541a1a;
-		margin: 0 auto;
-		margin-left: 22em;
-		margin-bottom: 1.5em;
-
+		width: 100%;
+		border: 1px solid #541a1a;
 	}
 
 	.slide {
@@ -97,7 +91,10 @@ body {
 	.day_text{
 		position: relative;
 	}
+		.process-title {
+			text-align: center;
 
+		}
 		.day_text p,
 		.day_text ul {
 			margin-bottom: 0.4em;
@@ -120,12 +117,6 @@ body {
 		.day_text p:last-child {
 			margin-bottom: 2em;
 			text-align: center;
-		}
-
-		.day_text p:nth-child(2),
-		.day_text p:nth-child(3){
-				text-align: center;
-				margin-top: 10em;
 		}
 
 		.day_text h3 {
