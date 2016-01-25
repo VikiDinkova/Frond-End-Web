@@ -9,5 +9,4 @@
  */
 angular.module('youCookGoodApp')
   .controller('ContactsCtrl', function () {
-    
   });
